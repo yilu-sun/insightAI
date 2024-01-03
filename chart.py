@@ -72,7 +72,7 @@ def get_insight_freestyle(aggregated_data_by_time, system):
 def get_insight_by_time(aggregated_data_by_time, system, time_category):
     prompt_by_time = f""" Data: ```{aggregated_data_by_time}```
     Call out the total number of logins, the ```{time_category}``` with most usage, and the ```{time_category}``` with least usage.
-    Find the following patterns in the usage data: gradual increase, gradual decrease, sudden increase, sudden decrease, sudden spike, increase and decrease, periodicity.
+    Find the following patterns in the usage data: gradual increase, gradual decrease, sudden increase, and sudden decrease.
     Be specific about percentage increase or decrease. 
     Rank the above patterns based on their significance with explanation.
     Provide the most interesting insights on usage trends based on the patterns.
